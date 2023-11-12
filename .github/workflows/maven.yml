@@ -33,7 +33,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           distribution: 'adopt'
-          java-version: '11'
+          java-version: '17'
 
       - name: Iniciar aplicativo Spring Boot com H2 (usado apenas para fins de exemplo)
         run: mvn spring-boot:run
