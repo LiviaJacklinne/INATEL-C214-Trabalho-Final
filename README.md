@@ -1,4 +1,4 @@
-[![CI Class](https://github.com/LiviaJacklinne/INATEL-C214-TrabalhoFinal-Teste/Trabalho-02actions/workflows/ci.yml/badge.svg)](https://github.com/LiviaJacklinne/INATEL-C214-TrabalhoFinal-Teste/Trabalho-02/actions/workflows/ci.yml)
+[![CI Class](https://github.com/LiviaJacklinne/INATEL-C214-Trabalho-Final/actions/workflows/ci.yml/badge.svg)](https://github.com/LiviaJacklinne/INATEL-C214-Trabalho-Final/actions/workflows/ci.yml)
 
 
 # Trabalho Final C214 LAB
