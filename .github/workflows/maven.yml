@@ -21,7 +21,9 @@ jobs:
 
       - name: Construir com Maven # Incluindo as dependencias
         run: mvn -B clean package
-
+  test:
+     runs-on: ubuntu-latest # Configurando a maquina virtual de teste
+     steps:
       - name: Executar testes # Executando os testes
         run: mvn test
 
