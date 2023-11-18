@@ -1,9 +1,12 @@
-name: CI/CD
+name: Java CI
 
 on:
   push:
     branches:
-      - main # A pipeline será executada a cada push na branch main
+      - main
+  # pull_request:
+  #   branches:
+  #     - main
 
 jobs:
   build:
@@ -14,22 +17,17 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Configurar JDK 11
-        uses: actions/setup-java@v2 # Configurando o a,biente java
+        uses: actions/setup-java@v2 # Configurando o ambiente java
         with:
           distribution: 'adopt'
           java-version: '17'
 
       - name: Construir com Maven # Incluindo as dependencias
-        run: mvn -B clean package
+        run: mvn clean install -B -V
 
-#      - name: Executar testes # Executando os testes
-#        run: mvn test
   test:
     runs-on: ubuntu-latest
     needs: build
-             
-      - name: Executar testes # Executando os testes
-        run: mvn test
 
     steps:
       - name: Checkout código # Faz um git clone da nossa branch, e chega o código
@@ -43,14 +41,3 @@ jobs:
 
       - name: Run tests with Maven
         run: mvn test # Comando para executar os testes do projeto
-
-  # deploy:
-  #    runs-on: ubuntu-latest
-  #    needs: build
-  #    steps:
-  #      - name: Configurar JDK 11
-  #        uses: actions/setup-java@v2
-  #        with:
-  #          distribution: 'adopt'
-  #          java-version: '17'
-
