@@ -3,12 +3,6 @@
 
 # Trabalho Final C214 LAB
 
-## Alunas
-* Ana Luiza Martins / 1701 / GEC
-* Letícia Moreira Mendes / 1705 / GEC
-* Letícia Vitória Merss Moreira / 56 / GES
-* Lívia Jacklinne Ramos Moreira / 1731 / GEC
-
 ## Apresentação do projeto
 Foi criada uma API para gerenciar tarefas (CRUD), onde o usuário pode salvar seus compromissos.
 
